@@ -1,0 +1,9 @@
+[package]
+name = "mod-vespera"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+# `cargo horizon-mod` bu SDK'yi .horizon/sdk/ altina indirir. Baska bagimlilik eklersen
+# once `horizon-launcher native-lock .` calistirman gerekir.
+horizon-mod-api = { path = ".horizon/sdk/api/crates/horizon-mod-api" }
